@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+body {
+    margin: 0;
+    background-color: #000000; /* Ajuste de color de fondo para mejor visibilidad */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.header {
+    width: 100%;
+    text-align: center;
+    background-color: #000000;
+    color: #fff;
+    padding: 20px 0;
+    box-sizing: border-box;
+    position: relative; /* Cambio de absolute a relative */
+    z-index: 1; /* Asegura que esté por encima del contenido principal */
+}
+.header__menu {
+    display: flex;
+    gap: 80px;
+}
+
+.header__menu__link {
+    font-family: var(--fuente-montserrat);
+    font-size: 1.5rem;
+    font-weight: 200;
+    color: #22d4fd;
+    text-decoration: none;
+}
+
+.main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 20px; /* Espacio entre la cabecera y las imágenes */
+    flex-grow: 1;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* Permite que las imágenes se ajusten en una nueva línea si es necesario */
+    gap: 20px; /* Espacio entre las imágenes */
+}
+
+.image-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.imagen {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    margin: 0;
+    border: 2px solid var(--color-texto);
+    border-radius: 10px; /* Agrega un borde redondeado */
+    margin-bottom: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición suave */
+    overflow: hidden;
+}
+.imagen:hover {
+    transform: scale(1.1); /* Aumenta el tamaño de la imagen en un 10% al pasar el mouse */
+}
+
+.link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #000000; /* Color de fondo del botón */
+    color: white; /* Color del texto del botón */
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-family: Arial, sans-serif; /* Fuente del botón */
+    border: 2px solid #22d4fd;
+}
+
+.link:hover {
+    background-color: gray; /* Color de fondo al pasar el cursor sobre el botón */
+}
+
+.footer {
+    width: 100%;
+    text-align: center;
+    background-color: #000000;
+    color: #fff;
+    padding: 20px 0;
+    box-sizing: border-box;
+    position: relative; /* Cambio de absolute a relative */
+    z-index: 1; /* Asegura que esté por encima del contenido principal */
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+.content__text {
+    flex: 1;
+    margin-right: 20px;
+    text-align: justify;
+    color: #fff;
+}
+.content__image {
+    flex: 1;
+    max-width: 100%;
+}
+.content__image img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+}
